@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { 
+      width: 250px; 
+      padding: 15px; 
+      font-family: system-ui, -apple-system, sans-serif; 
+    }
+    input { 
+      width: 100%; 
+      margin-bottom: 10px; 
+      padding: 8px; 
+      box-sizing: border-box; 
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button { 
+      width: 100%; 
+      padding: 10px; 
+      cursor: pointer; 
+      background: #2ea44f; 
+      color: white; 
+      border: none; 
+      border-radius: 4px; 
+      font-weight: bold; 
+    }
+    button:hover { 
+      background: #2c974b; 
+    }
+  </style>
+</head>
+<body>
+  <h3>Setup Sync</h3>
+  <input type="password" id="pat" placeholder="GitHub PAT">
+  <input type="text" id="repo" placeholder="username/repo-name">
+  <button id="saveBtn">Save Credentials</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
